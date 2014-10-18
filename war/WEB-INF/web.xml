@@ -98,6 +98,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>TaskQueueServlet</servlet-name>
 		<url-pattern>/TaskQueue</url-pattern>
 	</servlet-mapping>
+	
 	<servlet>
 		<servlet-name>CronExecServlet</servlet-name>
 		<servlet-class>com.demo.senao.taskqueue.CronExecServlet</servlet-class>
@@ -105,6 +106,15 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	<servlet-mapping>
 		<servlet-name>CronExecServlet</servlet-name>
 		<url-pattern>/CronExec</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CloudSQLServlet</servlet-name>
+		<servlet-class>com.demo.senao.cloudsql.CloudSQLServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CloudSQLServlet</servlet-name>
+		<url-pattern>/CloudSQL</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>

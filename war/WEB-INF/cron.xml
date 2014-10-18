@@ -4,7 +4,7 @@
     <url>/CronExec</url>
     <description>Just test</description>
     <!-- <schedule>every 2 hours synchronized</schedule> -->
-    <!-- <schedule>every 100 hours</schedule> -->
-    <schedule>every 2 minutes</schedule>
+    <schedule>every 300 hours</schedule>
+    <!-- <schedule>every 2 minutes</schedule> -->
   </cron>
 </cronentries>

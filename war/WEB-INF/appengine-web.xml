@@ -11,4 +11,5 @@
   </system-properties>
   
   <sessions-enabled>true</sessions-enabled>
+  <use-google-connector-j>true</use-google-connector-j>
 </appengine-web-app>
