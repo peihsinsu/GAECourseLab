@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+  <cron>
+    <url>/CronExec</url>
+    <description>Just test</description>
+    <!-- <schedule>every 2 hours synchronized</schedule> -->
+    <!-- <schedule>every 100 hours</schedule> -->
+    <schedule>every 2 minutes</schedule>
+  </cron>
+</cronentries>

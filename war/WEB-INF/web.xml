@@ -70,16 +70,42 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<url-pattern>/GetDataWithAncestor</url-pattern>
 	</servlet-mapping>	
 	
+	
+	<!-- Memcache -->
 	<servlet>
-		<servlet-name>TestWeb</servlet-name>
-		<servlet-class>com.demo.senao.TestWebServlet</servlet-class>
+		<servlet-name>MemcacheServlet</servlet-name>
+		<servlet-class>com.demo.senao.memcache.MemcacheServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>TestWeb</servlet-name>
-		<url-pattern>/testweb</url-pattern>
+		<servlet-name>MemcacheServlet</servlet-name>
+		<url-pattern>/Memcache</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>AsyncMemcacheServlet</servlet-name>
+		<servlet-class>com.demo.senao.memcache.AsyncMemcacheServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AsyncMemcacheServlet</servlet-name>
+		<url-pattern>/AsyncMemcache</url-pattern>
+	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>TaskQueueServlet</servlet-name>
+		<servlet-class>com.demo.senao.taskqueue.TaskQueueServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TaskQueueServlet</servlet-name>
+		<url-pattern>/TaskQueue</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>CronExecServlet</servlet-name>
+		<servlet-class>com.demo.senao.taskqueue.CronExecServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CronExecServlet</servlet-name>
+		<url-pattern>/CronExec</url-pattern>
+	</servlet-mapping>
 	
 	<servlet>
 		<servlet-name>TestWeb</servlet-name>
@@ -114,7 +140,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	<!-- Setup /appstats/* need admin permission -->
 	<!-- See: https://cloud.google.com/appengine/docs/java/config/webxml#Security_and_Authentication -->
 	<!-- See: https://cloud.google.com/appengine/docs/java/users/ -->
-	<security-constraint>
+	<!-- <security-constraint>
         <web-resource-collection>
             <web-resource-name>
 				admin
@@ -124,7 +150,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
         <auth-constraint>
             <role-name>admin</role-name>
         </auth-constraint>
-    </security-constraint>
+    </security-constraint> -->
 		
 
 </web-app>
